@@ -35,34 +35,7 @@ The experiment includes:
 ## Sample Code
 
 ```python
-import pandas as pd
-import seaborn as sns
-import matplotlib.pyplot as plt
-from scipy.stats import chi2_contingency
-
-# Load dataset
-data = pd.read_csv("data.csv")
-
-# Display first few rows
-print(data.head())
-
-# Frequency count
-print(data['Category'].value_counts())
-
-# Visualization
-sns.countplot(x='Category', data=data)
-plt.title("Category Distribution")
-plt.show()
-
-# Contingency Table
-table = pd.crosstab(data['Category'], data['Outcome'])
-
-# Chi-Square Test
-chi2, p, dof, expected = chi2_contingency(table)
-
-print("Chi-Square Value:", chi2)
-print("P-Value:", p)
-Expected Output
+.Expected Output
 
 Frequency tables of categorical variables
 
