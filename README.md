@@ -1,4 +1,4 @@
-Categorical Data Analysis Using Python
+##Categorical Data Analysis Using Python
 📌 Project Overview
 
 This project demonstrates how to perform categorical data analysis using Python.
@@ -14,7 +14,7 @@ Creating visualizations
 
 Conducting statistical tests for relationships between categorical variables
 
-🎯 Objectives
+##🎯 Objectives
 
 Understand categorical data and its types.
 
@@ -26,7 +26,7 @@ Apply statistical methods like the Chi-Square test.
 
 Interpret results using Python.
 
-🛠️ Technologies Used
+##🛠️ Technologies Used
 
 Python
 
@@ -40,7 +40,7 @@ Seaborn – Statistical visualization
 
 SciPy – Statistical tests
 
-📂 Project Structure
+##📂 Project Structure
 Categorical-Data-Analysis/
 │
 ├── data/
@@ -56,7 +56,7 @@ Categorical-Data-Analysis/
 │   └── plots/
 │
 └── README.md
-📊 Methods Used
+##📊 Methods Used
 1️⃣ Frequency Analysis
 
 Counts the number of occurrences in each category.
@@ -118,7 +118,7 @@ python analysis.py
 
 or open the Jupyter Notebook.
 
-📚 Applications
+##📚 Applications
 
 Categorical data analysis is widely used in:
 
@@ -132,7 +132,7 @@ Customer segmentation
 
 Social science research
 
-Conclusion
+##Conclusion
 
 Categorical data analysis using Python is an effective way to understand and interpret data that is divided into categories. By using Python libraries such as Pandas, NumPy, Matplotlib, Seaborn, and SciPy, we can easily organize, analyze, and visualize categorical variables.
 
