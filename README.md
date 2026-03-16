@@ -35,26 +35,30 @@ The experiment includes:
 ## Sample Code
 
 ```python
-.Expected Output
+import pandas as pd
+import seaborn as sns
+import matplotlib.pyplot as plt
+from scipy.stats import chi2_contingency
 
-Frequency tables of categorical variables
+# Load dataset
+data = pd.read_csv("data.csv")
 
-Graphical representation of categories
+# Display first few rows
+print(data.head())
 
-Chi-square test results showing relationships between variables
+# Frequency count
+print(data['Category'].value_counts())
 
-Applications
+# Visualization
+sns.countplot(x='Category', data=data)
+plt.title("Category Distribution")
+plt.show()
 
-Survey data analysis
+# Contingency Table
+table = pd.crosstab(data['Category'], data['Outcome'])
 
-Market research
+# Chi-Square Test
+chi2, p, dof, expected = chi2_contingency(table)
 
-Customer segmentation
-
-Medical research
-
-Social science studies
-
-Conclusion
-
-Categorical data analysis helps identify patterns and relationships between categorical variables. Python provides powerful tools for performing statistical tests and visualizations, making it easier to interpret categorical datasets.
+print("Chi-Square Value:", chi2)
+print("P-Value:", p)
